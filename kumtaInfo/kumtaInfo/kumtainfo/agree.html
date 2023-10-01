@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>agree - terms</title>
+        <link rel="stylesheet" href="mycss.css">
+        <style>
+            a{text-decoration:none;}
+            iframe{width:80%; height:75%;}
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>KUMTA-INFO</h1>
+            <iframe src="term.html" title="terms & conditions"></iframe><br><br>
+            <input type="checkbox" id="myCheck" onclick="myFunction()">
+            <label for="myCheck">I agree the <a href="tnc.html">terms & conditions </a>of the kumta info</label><br><br> 
+            <a href="signup.php"><button id="continue" name="continue" style="display:none">Continue</button></a>
+        </center>
+    </body>
+    <script>
+        function myFunction() {
+          var checkBox = document.getElementById("myCheck");
+          var text = document.getElementById("continue");
+          if (checkBox.checked == true){
+            text.style.display = "block";
+          } else {
+             text.style.display = "none";
+          }
+        }
+        </script>
+</html>
